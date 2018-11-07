@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Resize 6</title>
+    <style>
+
+    body {
+    	margin: 0;
+    	background-color: white;
+    	width: 100vw;
+    	height: 100vh;
+    }
+
+    .inner {
+    	width: 100vw;
+    	height: 100vh;
+    	background-color: red;
+    	display: block;
+    	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+
+
+    		
+    	@media only screen and (max-width: 1000px) {
+		    .inner {
+		        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 950px) {
+		    .inner {
+		        clip-path: polygon(25% 0%, 75% 0%, 75% 100%, 25% 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 900px) {
+		    .inner {
+		        clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 850px) {
+		    .inner {
+		        clip-path: polygon(25% 0%, 75% 0%, 75% 100%, 25% 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 800px) {
+		    .inner {
+		        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 750px) {
+		    .inner {
+		        clip-path: polygon(25% 0%, 75% 0%, 75% 100%, 25% 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 700px) {
+		    .inner {
+		        clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 25% 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 650px) {
+		    .inner {
+		        clip-path: polygon(25% 0%, 75% 0%, 75% 100%, 25% 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 600px) {
+		    .inner {
+		        clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 550px) {
+		    .inner {
+		        clip-path: polygon(25% 0%, 75% 0%, 75% 100%, 25% 100%);
+		    }
+		}
+
+    </style>
+  </head>
+  <body>
+  	<div class="inner"></div>
+  </body>
+</html>

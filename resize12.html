@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Resize 11</title>
+    <style>
+
+    body {
+    	margin: 0;
+    	background-color: white;
+    	width: 100vw;
+    	height: 100vh;
+    }
+
+    .inner {
+    	position: absolute;
+    	width: 100vw;
+    	height: 100vh;
+    	background: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(255,0,0,1) 99%,rgba(255,0,0,1) 99%,rgba(188,43,43,1) 100%);
+    	display: block;
+    	z-index: 5;
+    }
+
+    .inner2 {
+    	position: absolute;
+    	width: 100vw;
+    	height: 100vh;
+    	background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 7%,rgba(248,181,0,1) 8%,rgba(248,181,0,1) 8%,rgba(251,223,147,1) 100%);
+    	display: block;
+    	z-index: 10;
+    	mix-blend-mode: overlay;
+    }
+
+
+    		
+    	@media only screen and (max-width: 1000px) {
+		    .inner {
+		        background: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(247,123,123,1) 9%,rgba(247,123,123,1) 9%,rgba(255,0,0,1) 9%,rgba(188,43,43,1) 100%);
+		    }
+
+		    .inner2 {
+		    	background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 7%,rgba(248,181,0,1) 8%,rgba(248,181,0,1) 8%,rgba(251,223,147,1) 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 950px) {
+		    .inner {
+		        background: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(247,123,123,1) 18%,rgba(255,0,0,1) 19%,rgba(255,0,0,1) 19%,rgba(188,43,43,1) 100%);
+		    }
+
+		    .inner2 {
+		    	background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 14%,rgba(248,181,0,1) 15%,rgba(251,223,147,1) 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 900px) {
+		    .inner {
+		        background: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(255,0,0,1) 29%,rgba(255,0,0,1) 29%,rgba(255,0,0,1) 29%,rgba(255,0,0,1) 29%,rgba(247,123,123,1) 29%,rgba(188,43,43,1) 100%); 
+		    }
+
+		    .inner2 {
+		    	background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 25%,rgba(248,181,0,1) 26%,rgba(251,223,147,1) 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 850px) {
+		    .inner {
+		        background: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(247,123,123,1) 37%,rgba(247,123,123,1) 37%,rgba(255,0,0,1) 38%,rgba(188,43,43,1) 100%);
+		    }
+
+		    .inner2 {
+		    	background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 34%,rgba(248,181,0,1) 35%,rgba(251,223,147,1) 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 800px) {
+		    .inner {
+		        background: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(247,123,123,1) 48%,rgba(247,123,123,1) 48%,rgba(255,0,0,1) 49%,rgba(188,43,43,1) 100%);
+		    }
+
+		    .inner2 {
+		    	background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 45%,rgba(248,181,0,1) 46%,rgba(251,223,147,1) 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 750px) {
+		    .inner {
+		        background: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(247,123,123,1) 58%,rgba(247,123,123,1) 58%,rgba(255,0,0,1) 59%,rgba(188,43,43,1) 100%);
+		    }
+
+		    .inner2 {
+		    	background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 55%,rgba(248,181,0,1) 57%,rgba(251,223,147,1) 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 700px) {
+		    .inner {
+		        background: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(247,123,123,1) 66%,rgba(247,123,123,1) 66%,rgba(255,0,0,1) 67%,rgba(188,43,43,1) 100%);
+		    }
+
+		    .inner2 {
+		    	background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 63%,rgba(248,181,0,1) 64%,rgba(251,223,147,1) 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 650px) {
+		    .inner {
+		        background: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(247,123,123,1) 73%,rgba(247,123,123,1) 74%,rgba(255,0,0,1) 75%,rgba(188,43,43,1) 100%);
+		    }
+
+		    .inner2 {
+		    	background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 71%,rgba(252,205,77,1) 71%,rgba(248,181,0,1) 72%,rgba(251,223,147,1) 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 600px) {
+		    .inner {
+		        background: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(247,123,123,1) 82%,rgba(255,0,0,1) 83%,rgba(188,43,43,1) 100%); 
+		    }
+
+		    .inner2 {
+		    	background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 71%,rgba(252,205,77,1) 79%,rgba(252,205,77,1) 79%,rgba(248,181,0,1) 80%,rgba(251,223,147,1) 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 550px) {
+		    .inner {
+		        background: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(247,123,123,1) 89%,rgba(247,123,123,1) 89%,rgba(255,0,0,1) 91%,rgba(188,43,43,1) 100%);
+		    }
+
+		    .inner2 {
+		    	background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(248,181,0,1) 97%,rgba(251,223,147,1) 100%);
+		    }
+		}
+
+		@media only screen and (max-width: 500px) {
+		    .inner {
+		        background: linear-gradient(to bottom, rgba(255,0,0,1) 0%,rgba(255,0,0,1) 99%,rgba(255,0,0,1) 99%,rgba(188,43,43,1) 100%);
+		    }
+
+		    .inner2 {
+		    	background: linear-gradient(to right, rgba(252,234,187,1) 0%,rgba(248,181,0,1) 97%,rgba(251,223,147,1) 100%);
+		    }
+		}
+
+
+    </style>
+  </head>
+  <body>
+  	<div class="inner"></div>
+  	<div class="inner2"></div>
+  </body>
+</html>

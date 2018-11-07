@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Resize 7</title>
+    <style>
+
+    body {
+    	margin: 0;
+    	background-color: white;
+    	width: 100vw;
+    	height: 100vh;
+    }
+
+    .inner {
+    	width: 40vw;
+    	height: 55vh;
+    	background-color: purple;
+    	display: block;
+    	margin-left: 30vw;
+    	margin-top: 20vh;
+    	clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    	animation-name: rotating;
+    	animation-iteration-count: 900;
+    	animation-duration: 2s;
+    }
+
+
+    @keyframes rotating {
+    	from {transform: rotate(0deg);}
+    	to {transform: rotate(360deg);}
+    }
+
+
+    @media only screen and (max-width: 1000px) {
+		    .inner {
+		        animation-duration: 2s; 
+		    }
+	}
+
+	@media only screen and (max-width: 900px) {
+		    .inner {
+		        animation-duration: 1.8s; 
+		    }
+	}
+
+	@media only screen and (max-width: 800px) {
+		    .inner {
+		        animation-duration: 1.6s; 
+		    }
+	}
+
+	@media only screen and (max-width: 700px) {
+		    .inner {
+		        animation-duration: 1.4s; 
+		    }
+	}
+
+	@media only screen and (max-width: 600px) {
+		    .inner {
+		        animation-duration: 1.2s; 
+		    }
+	}
+
+	@media only screen and (max-width: 500px) {
+		    .inner {
+		        animation-duration: 1s; 
+		    }
+	}
+
+	@media only screen and (max-width: 400px) {
+		    .inner {
+		        animation-duration: 0.8s; 
+		    }
+	}
+
+	@media only screen and (max-width: 300px) {
+		    .inner {
+		        animation-duration: 0.6s; 
+		    }
+	}
+
+	@media only screen and (max-width: 200px) {
+		    .inner {
+		        animation-duration: 0.4s; 
+		    }
+	}
+
+	@media only screen and (max-width: 100px) {
+		    .inner {
+		        animation-duration: 0.2s; 
+		    }
+	}
+    	
+
+    </style>
+  </head>
+  <body>
+  	<div class="inner"></div>
+  </body>
+    }
+</html>
